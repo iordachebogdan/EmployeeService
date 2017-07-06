@@ -10,6 +10,7 @@ using System.Web.Http.Cors;
 namespace EmployeeService2.Controllers
 {
     [EnableCorsAttribute("*", "*", "*")]
+    [RequireHttps]
     public class EmployeesController : ApiController
     {
         public HttpResponseMessage Get(string gender = "All")

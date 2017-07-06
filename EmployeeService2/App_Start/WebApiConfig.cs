@@ -30,6 +30,8 @@ namespace EmployeeService2
 
             //EnableCorsAttribute cors = new EnableCorsAttribute("*", "*", "*");
             config.EnableCors();
+
+            //config.Filters.Add(new RequireHttpsAttribute()); //instead of requiring https globally, require https for a specific controller or method
         }
     }
 }
