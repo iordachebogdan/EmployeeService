@@ -10,7 +10,7 @@
             $('#btn').click(function () {
                 $.ajax({
                     type: 'GET',
-                    url: "api/employees/",
+                    url: "http://localhost:51018/api/employees/",
                     dataType: 'jsonp',
                     success: function (data) {
                         ulEmployees.empty();
